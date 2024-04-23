@@ -8,6 +8,13 @@ int main()
     printf("Digite um número em base decimal: ");
     scanf("%d", &decimal);
     
+    while(decimal < 0)
+    {
+        printf("Número inválido!\nO valor inserido deve ser positivo.");
+        printf("Digite um número em base decimal: ");
+        scanf("%d", &decimal);
+    }
+    
     printf("Digite a nova base desse número: ");
     scanf("%d", &base);
     
@@ -16,6 +23,12 @@ int main()
         printf("Base inválida!\n");
         printf("Digite a nova base desse número: ");
         scanf("%d", &base);
+    }
+    
+    if(decimal == 0)
+    {
+        printf("\n0 em base %d é: 0",base);
+        return 0;
     }
     
     printf("\n%d em base %d é: ", decimal, base);
@@ -75,5 +88,5 @@ int main()
         printf("%d", result[j]);
     }
     
-    return 0;
+return 0;
 }
