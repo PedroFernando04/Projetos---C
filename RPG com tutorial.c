@@ -41,6 +41,9 @@ int main() {
     printf("Qual nome do seu personagem?\n");
     scanf(" %[^\n]", nome);
     
+    system("cls || clear");
+    printf("Nome: %s", nome);
+    
     printf("\nVamos selecionar a classe do seu personagem.\n");
     printf("(Classe || Atributo principal)\n");
     printf("\n1- Guerreiro || Força\n2- Ladino || Destreza\n3- Curandeiro || Constituição\n4- Mago || Inteligência\n5- Bardo || Carisma\n6- Druida || Sabedoria\n\n");
@@ -240,60 +243,7 @@ void inicio()
                 printf("\n Os druidas são especialistas em cura natural, bem como em controlar ou convocar criaturas da natureza para lutar ao seu lado.");
                 printf("\n Sua ligação com a natureza os torna defensores do equilíbrio e protetores das terras selvagens.\n\n");
             
-                printf("Deseja continuar para o tutorial de atributos?(S/N)");
-                scanf(" %c", &tutorialAtributo);
-                
-                while(1)
-                {
-                
-                    if(tutorialAtributo == 'S' || tutorialAtributo == 's')
-                        {
-                            system("cls || clear");
-                            
-                            //Atributos
-                            printf("Atributos são valores numéricos que representam as habilidades e as capacidades do personagem.");
-                            printf("\nValores esses que servem como base para determinar a eficácia do personagem em diversas habilidades e ações.\n");
-                            printf("Sendo levados em consideração, em uma jogada, os atributos básicos, da ficha do personagem, somados com o dado lançado no momento.\n\n");
-                            printf("Os atributos são:\n\n");
-                                //Força
-                                printf("Força:\n A força é um atributo que representa a capacidade física do personagem.");
-                                printf("\n Significando que o personagem é mais capaz em atividades que exigem força física, como combate corpo a corpo,\n");
-                                printf("levantamento de objetos pesados e resistência a efeitos que demandam vigor físico, como ser empurrado ou derrubado.\n\n");
-                                
-                                //Destreza
-                                printf("Destreza:\n A destreza está relacionada à agilidade, coordenação e reflexos do personagem.");
-                                printf("\n Resultando em maior precisão em ataques à distância, capacidade de esquiva a ataques inimigos, ");
-                                printf("habilidades furtivas e capacidade de realizar acrobacias ou manobras de evasão.\n\n");
-                                
-                                //Constituição
-                                printf("Constituição:\n A constituição ou vigor representa a saúde e a resistência do personagem.");
-                                printf("\n Significando que o personagem pode suportar mais dano, resistir a efeitos adversos, como veneno ou doenças, e manter sua resistência física por mais tempo.\n\n");
-                                
-                                //Inteligência
-                                printf("Inteligência:\n A inteligência representa a capacidade mental, conhecimento e habilidades mágicas do personagem.");
-                                printf("\n Resultando em maior eficácia em habilidades mágicas, capacidade de resolver problemas complexos, conhecimento em áreas acadêmicas e aptidão para\n identificar e utilizar artefatos mágicos.\n\n");
-                                
-                                
-                                //Carisma
-                                printf("Carisma:\n O carisma mede a presença, confiança e habilidades sociais do personagem.");
-                                printf("\n Uma alta pontuação de carisma pode influenciar a capacidade do personagem de persuadir outros, liderar grupos, negociar com NPCs e influenciar\n as interações sociais de maneira geral.\n\n");
-                                
-                                //Sabedoria
-                                printf("Sabedoria:\n A sabedoria reflete a percepção, intuição e experiência do personagem.");
-                                printf("\n Resultando em maior resistência a efeitos mentais, como encantamentos ou ilusões, capacidade de perceber ameaças e armadilhas ocultas\n e sabedoria prática em situações do dia a dia.\n\n");
-                            
-                            break;
-                        }
-                
-                        else if(tutorialAtributo == 'N' || tutorialAtributo == 'n')
-                        break;
-                        
-                        else
-                        {
-                            printf("\nResposta inválida!\nResponda com \'S\' ou \'s\' para \"Sim\" e \'N\' ou \'n\' para \"Não\"");
-                            scanf(" %c", &tutorialAtributo);
-                        }
-                }
+                break;
         }
         
         else if(respostaInicio == 'N' || respostaInicio == 'n')
@@ -304,7 +254,62 @@ void inicio()
             printf("\nResposta inválida!\nResponda com \'S\' ou \'s\' para \"Sim\" e \'N\' ou \'n\' para \"Não\"");
             scanf(" %c", &respostaInicio);
         }
-        break;
+        
+    }
+    
+    printf("Deseja continuar para o tutorial de atributos?(S/N)");
+                scanf(" %c", &tutorialAtributo);
+    while(1)
+    {
+                
+        if(tutorialAtributo == 'S' || tutorialAtributo == 's')
+            {
+                system("cls || clear");
+                
+                //Atributos
+                printf("Atributos são valores numéricos que representam as habilidades e as capacidades do personagem.");
+                printf("\nValores esses que servem como base para determinar a eficácia do personagem em diversas habilidades e ações.\n");
+                printf("Sendo levados em consideração, em uma jogada, os atributos básicos, da ficha do personagem, somados com o dado lançado no momento.\n\n");
+                printf("Os atributos são:\n\n");
+                    //Força
+                    printf("Força:\n A força é um atributo que representa a capacidade física do personagem.");
+                    printf("\n Significando que o personagem é mais capaz em atividades que exigem força física, como combate corpo a corpo,\n");
+                    printf("levantamento de objetos pesados e resistência a efeitos que demandam vigor físico, como ser empurrado ou derrubado.\n\n");
+                    
+                    //Destreza
+                    printf("Destreza:\n A destreza está relacionada à agilidade, coordenação e reflexos do personagem.");
+                    printf("\n Resultando em maior precisão em ataques à distância, capacidade de esquiva a ataques inimigos, ");
+                    printf("habilidades furtivas e capacidade de realizar acrobacias ou manobras de evasão.\n\n");
+                    
+                    //Constituição
+                    printf("Constituição:\n A constituição ou vigor representa a saúde e a resistência do personagem.");
+                    printf("\n Significando que o personagem pode suportar mais dano, resistir a efeitos adversos, como veneno ou doenças, e manter sua resistência física por mais tempo.\n\n");
+                    
+                    //Inteligência
+                    printf("Inteligência:\n A inteligência representa a capacidade mental, conhecimento e habilidades mágicas do personagem.");
+                    printf("\n Resultando em maior eficácia em habilidades mágicas, capacidade de resolver problemas complexos, conhecimento em áreas acadêmicas e aptidão para\n identificar e utilizar artefatos mágicos.\n\n");
+                    
+                    
+                    //Carisma
+                    printf("Carisma:\n O carisma mede a presença, confiança e habilidades sociais do personagem.");
+                    printf("\n Uma alta pontuação de carisma pode influenciar a capacidade do personagem de persuadir outros, liderar grupos, negociar com NPCs e influenciar\n as interações sociais de maneira geral.\n\n");
+                    
+                    //Sabedoria
+                    printf("Sabedoria:\n A sabedoria reflete a percepção, intuição e experiência do personagem.");
+                    printf("\n Resultando em maior resistência a efeitos mentais, como encantamentos ou ilusões, capacidade de perceber ameaças e armadilhas ocultas\n e sabedoria prática em situações do dia a dia.\n\n");
+                
+                break;
+            }
+    
+            else if(tutorialAtributo == 'N' || tutorialAtributo == 'n')
+            break;
+            
+            else
+            {
+                printf("\nResposta inválida!\nResponda com \'S\' ou \'s\' para \"Sim\" e \'N\' ou \'n\' para \"Não\"");
+                scanf(" %c", &tutorialAtributo);
+            }
+            
     }
 }
     
