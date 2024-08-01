@@ -15,7 +15,8 @@ int main()
         scanf("%d", &decimal);
     }
     
-    printf("Digite a nova base desse número: ");
+    printf("\n\nBinário: 2\nOctal: 8\nHexaDecimal: 16");
+    printf("\n\nDigite a nova base desse número: ");
     scanf("%d", &base);
     
     while(base != 2 && base != 8 && base != 16)
