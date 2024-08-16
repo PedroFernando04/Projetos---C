@@ -1,3 +1,5 @@
+//https://www.thehuxley.com/problem/43
+
 #include <stdio.h>
 
 int main()
